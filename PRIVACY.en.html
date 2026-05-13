@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy — Gentilé</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+
+<nav class="lang-switch">
+<a href="PRIVACY.html">Français</a> · <strong>English</strong>
+</nav>
+
+<div class="draft-banner">
+<strong>Draft.</strong> The <span class="todo">{{…}}</span> markers must be replaced with final values before publishing on the Play Store. Remove this banner once done.
+</div>
+
+<h1>Privacy Policy — Gentilé</h1>
+
+<p><em>Last updated: <span class="todo">{{PUBLICATION_DATE, e.g. 13 May 2026}}</span></em></p>
+
+<p>This policy describes how the <strong>Gentilé</strong> application ("the app"), published by <strong><span class="todo">{{PUBLISHER_NAME}}</span></strong> ("we"), processes your data when you use it on an Android device through the Google Play Store.</p>
+
+<p>The app is designed to work <strong>without a user account, without sign-up and without any publisher-side server</strong>. Virtually all data stays on your device.</p>
+
+<hr>
+
+<h2>1. Data processed locally (on your device)</h2>
+
+<table>
+<thead>
+<tr><th>Data</th><th>Purpose</th><th>Storage</th><th>Retention</th></tr>
+</thead>
+<tbody>
+<tr><td>Score history (game mode, score, date, player names in multiplayer, rounds played)</td><td>Display the "Scores" screen and compute your statistics</td><td>Local Room database (<code>score_history</code>)</td><td>Until you tap "Clear history" or uninstall the app</td></tr>
+<tr><td>Game configuration (mode, round count, players, zone)</td><td>Start a game from the setup screen</td><td>In-memory only</td><td>Cleared at the end of the session</td></tr>
+<tr><td>Completed-games counter</td><td>Pace the display of interstitial ads</td><td>SharedPreferences (<code>ads_prefs</code>)</td><td>Until uninstall</td></tr>
+<tr><td>Approximate or precise GPS position</td><td>Recenter the map on your location, only if you enable the "Locate me" button</td><td>In-memory only</td><td>Cleared as soon as the feature is disabled or the app is closed</td></tr>
+</tbody>
+</table>
+
+<p><strong>None of this data is transmitted to our servers</strong> (we don't have any).</p>
+
+<hr>
+
+<h2>2. Data processed by third parties</h2>
+
+<p>The app calls several third-party services to display content. Each applies its own privacy policy.</p>
+
+<h3>2.1. Google Mobile Ads (AdMob)</h3>
+<ul>
+<li><strong>Operator</strong>: Google Ireland Ltd / Google LLC</li>
+<li><strong>Data collected</strong>: Android Advertising ID (AAID), technical device info (model, OS, language), interactions with the ads, approximate location (derived from IP) for targeting.</li>
+<li><strong>Purpose</strong>: display an interstitial ad between games.</li>
+<li><strong>Policy</strong>: <a href="https://policies.google.com/technologies/ads">https://policies.google.com/technologies/ads</a></li>
+<li><strong>GDPR consent</strong>: if you are in the EU, a Google UMP consent banner is shown on first launch so you can accept or refuse advertising cookies/identifiers.</li>
+</ul>
+
+<h3>2.2. Wikimedia Foundation (Wikipedia, Wikimedia Commons, Wikidata)</h3>
+<ul>
+<li><strong>Operator</strong>: Wikimedia Foundation, Inc.</li>
+<li><strong>Data exchanged</strong>: your IP address and an application user-agent, when loading photos and Wikipedia pages.</li>
+<li><strong>Purpose</strong>: display photo galleries (monuments, museums, municipalities) and related information.</li>
+<li><strong>Policy</strong>: <a href="https://foundation.wikimedia.org/wiki/Privacy_policy">https://foundation.wikimedia.org/wiki/Privacy_policy</a></li>
+</ul>
+
+<h3>2.3. Map tile provider (CARTO / OpenFreeMap)</h3>
+<ul>
+<li><strong>Data exchanged</strong>: your IP address, the coordinates of the requested tiles (= the area you look at on the map).</li>
+<li><strong>Purpose</strong>: render the basemap.</li>
+<li><strong>CARTO policy</strong>: <a href="https://carto.com/privacy/">https://carto.com/privacy/</a></li>
+</ul>
+
+<hr>
+
+<h2>3. Android permissions requested</h2>
+
+<table>
+<thead>
+<tr><th>Permission</th><th>Why</th></tr>
+</thead>
+<tbody>
+<tr><td><code>INTERNET</code></td><td>Load Wikimedia photos, map tiles and AdMob ads</td></tr>
+<tr><td><code>ACCESS_FINE_LOCATION</code> / <code>ACCESS_COARSE_LOCATION</code></td><td>Only if you tap the "Locate me" button in the Explore screen. The position is used locally to recenter the map.</td></tr>
+</tbody>
+</table>
+
+<p>No other sensitive permission (camera, microphone, contacts, storage…) is requested.</p>
+
+<hr>
+
+<h2>4. Data shown without collection</h2>
+
+<p>The app displays public data from open sources, <strong>fetched on demand</strong> and <strong>not combined with your personal data</strong>:</p>
+<ul>
+<li><code>data.gouv.fr</code> (Etalab Open License 2.0) — French municipalities' gentilés, historical monuments, Museums of France, "Maisons des Illustres", European heritage label, remarkable gardens, contemporary architecture, live performance, regional natural parks, national parks;</li>
+<li><code>github.com/gregoiredavid/france-geojson</code> (MIT, underlying IGN data under Open License) — administrative boundaries for regions / departments / municipalities;</li>
+<li>Wikimedia photos (CC BY-SA, CC BY, public domain) with mandatory author and license credit shown in every photo carousel.</li>
+</ul>
+
+<hr>
+
+<h2>5. Your rights (GDPR)</h2>
+
+<p>Because the app does not build any user profile on our side, your GDPR rights apply as follows:</p>
+<ul>
+<li><strong>Right to erasure</strong>: "Clear history" button in the Scores screen, or uninstall the app (wipes everything, including the games counter).</li>
+<li><strong>Right of access / rectification</strong>: all data is visible in the Scores screen; you can change it indirectly by clearing and replaying.</li>
+<li><strong>AdMob data</strong>: to exercise your rights regarding data collected by Google, see your Google account dashboard and the <a href="https://policies.google.com/privacy">Google privacy policy</a>.</li>
+<li><strong>Complaint</strong>: you may file a complaint with the <a href="https://www.cnil.fr/en/home">CNIL</a> (French data-protection authority) or the supervisory authority of your country.</li>
+</ul>
+
+<hr>
+
+<h2>6. Minors</h2>
+
+<p>The app does not require sign-up, builds no profile and collects no identifying data. Ads served by AdMob are, by contract, compliant with the rules for general audiences; if you believe the app is used by a minor, decline the AdMob consent on first launch to disable ad targeting.</p>
+
+<hr>
+
+<h2>7. Transfers outside the EU</h2>
+
+<p>We do not transfer data outside the EU — we don't collect any. Third parties (Google, Wikimedia, CARTO) may host servers outside the EU; each applies its own transfer safeguards (EU Standard Contractual Clauses).</p>
+
+<hr>
+
+<h2>8. Changes to this policy</h2>
+
+<p>We may update this policy to reflect technical or regulatory changes. The "Last updated" date at the top of this document tracks the changes. Previous versions are available in the git history of the repository <span class="todo">{{REPO_URL, optional}}</span>.</p>
+
+<hr>
+
+<h2>9. Contact</h2>
+
+<p>For any question about this policy or your data:</p>
+
+<p>
+<strong><span class="todo">{{PUBLISHER_NAME}}</span></strong><br>
+<span class="todo">{{POSTAL_ADDRESS, optional for an individual}}</span><br>
+Email: <strong>support.jerapp@gmail.com</strong>
+</p>
+
+</main>
+</body>
+</html>
